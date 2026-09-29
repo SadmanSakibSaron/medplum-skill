@@ -1,14 +1,14 @@
-# Housecall Claude Plugins
+# Medplum Skill
 
-Shared Claude Code plugins for the Housecall team.
+A Claude Code plugin that answers Medplum and FHIR R4 questions the way the Medplum team would, citing medplum.com docs.
 
 ## Install
 
 In Claude Code, run:
 
 ```
-/plugin marketplace add SadmanSakibSaron/housecall-claude-plugins
-/plugin install medplum@housecall-plugins
+/plugin marketplace add SadmanSakibSaron/medplum-skill
+/plugin install medplum@medplum-skill
 ```
 
 You need read access to this repo first. Restart Claude Code after installing.
@@ -86,13 +86,13 @@ Answers name the exact FHIR resources and fields, recommend a default, flag the 
 - Give context: who the user is, what they do, which platform (patient app, EHR web). Better input, sharper answer.
 - Ask for the output you want: "as a table", "as user stories", "just the FHIR resources".
 - Ask follow-ups in the same chat. It keeps the model it already built.
-- It knows Medplum's docs, not our code. For how Housecall works today, point it at our repos too.
+- It knows Medplum's docs, not our code. For how your product works today, point it at your code too.
 - The docs are a Sept 2026 snapshot. For exact API behavior, check https://www.medplum.com/docs.
 
 ## Update
 
 ```
-/plugin marketplace update housecall-plugins
+/plugin marketplace update medplum-skill
 ```
 
 ## Plugins

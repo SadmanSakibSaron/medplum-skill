@@ -1,10 +1,10 @@
 {
-  "name": "housecall-plugins",
+  "name": "medplum-skill",
   "owner": {
-    "name": "Housecall Product Team"
+    "name": "Sadman Sakib Saron"
   },
   "metadata": {
-    "description": "Shared Claude Code plugins for the Housecall team."
+    "description": "Medplum Skill: Medplum and FHIR R4 knowledge for Claude Code."
   },
   "plugins": [
     {
