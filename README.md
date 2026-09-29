@@ -22,71 +22,18 @@ Two ways to call it:
 
 Answers name the exact FHIR resources and fields, recommend a default, flag the gotchas, and cite the medplum.com page they came from.
 
-### Examples
-
-**Model a feature in FHIR**
+### Example
 
 ```
-/medplum admin and medical should have different inboxes since they are different teams. how can we achieve that
-```
-```
-/medplum how should we model a questionnaire the patient fills before a video consult, and turn the answers into structured data
-```
-```
-/medplum a parent manages accounts for their children. how do we let them see and book for the kids but not other patients
-```
-
-**Access and security**
-
-```
-/medplum we have white-label partners like Binsina and NGI. how do we keep each partner's patients separate
-```
-```
-/medplum can a receptionist see appointments but not clinical notes? what does the access policy look like
-```
-
-**Automation**
-
-```
-/medplum send a reminder 24 hours before an appointment. subscription and bot, or cron?
-```
-```
-/medplum when a lab result comes in, create a task for the ordering doctor
-```
-
-**Migration from our Laravel backend**
-
-```
-/medplum we are moving from a custom Laravel EHR to Medplum. where do we start and what do we migrate first
-```
-```
-/medplum how do we handle duplicate patient records during migration
-```
-
-**Billing and compliance**
-
-```
-/medplum how do we bill for async messaging under a subscription
-```
-```
-/medplum what compliance do we inherit from hosted Medplum and what is still on us
-```
-
-**Look something up**
-
-```
-/medplum what does the Medplum doc say about read receipts
-```
-```
-/medplum explain AccessPolicy parameters like I'm a designer
+/medplum admin and medical staff are different teams. how do we give each team its own inbox for patient messages
 ```
 
 ### Tips
 
-- Give context: who the user is, what they do, which platform (patient app, EHR web). Better input, sharper answer.
+- Give context: who the user is, what they do, which platform (patient app, clinician app). Better input, sharper answer.
 - Ask for the output you want: "as a table", "as user stories", "just the FHIR resources".
 - Ask follow-ups in the same chat. It keeps the model it already built.
-- It knows Medplum's docs, not our code. For how your product works today, point it at your code too.
+- It knows Medplum's docs, not your code. For how your product works today, point it at your code too.
 - The docs are a Sept 2026 snapshot. For exact API behavior, check https://www.medplum.com/docs.
 
 ## Update
