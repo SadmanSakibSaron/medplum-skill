@@ -1,0 +1,8 @@
+{
+  "name": "medplum",
+  "description": "Medplum headless EHR and FHIR R4 knowledge: data modeling, access policies, Bots, messaging, billing, migration. Distilled from 493 medplum.com docs and blog posts.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Housecall Product Team"
+  }
+}

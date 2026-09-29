@@ -1,0 +1,17 @@
+{
+  "name": "housecall-plugins",
+  "owner": {
+    "name": "Housecall Product Team"
+  },
+  "metadata": {
+    "description": "Shared Claude Code plugins for the Housecall team."
+  },
+  "plugins": [
+    {
+      "name": "medplum",
+      "source": "./plugins/medplum",
+      "description": "Answer Medplum / FHIR R4 questions the way the Medplum team would, citing medplum.com docs. Bundles the full docs and blog corpus (Sept 2026).",
+      "version": "1.0.0"
+    }
+  ]
+}
